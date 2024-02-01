@@ -9,7 +9,7 @@ export default function Signup() {
     const handleClick=async(e)=>{
         e.preventDefault()
         // console.log("values dekhi",log.email,log.password)
-        const response = await fetch("http://localhost:5000/api/auth/createuser", {
+        const response = await fetch("https://ecommercemern-ivory.vercel.app/api/auth/createuser", {
                 method: "POST", // *GET, POST, PUT, DELETE, etc.
                 headers: {
                     "Content-Type": "application/json",
