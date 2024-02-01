@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import orderCon from './Ordercontext';
 
 export default function Orderstate(props) {
-    const host = "http://localhost:5000"
+    const host = "https://ecommercemern-ivory.vercel.app"
 
     // Get  all list:
     const initialorders = []//for the intial lsit fetch
