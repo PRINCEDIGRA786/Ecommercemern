@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import Navbar from './Navbar'
 // import { NavLink } from 'react-router-dom'
 // import Apii from './Apii'
@@ -24,10 +24,13 @@ export default function Home() {
   const navigate=useNavigate();
 arr=articles.filter((element)=>{
   return element.trending==1;})
+   useEffect(()=>{
+    if(!localStorage.getItem('token')){
+      navigate('/')
+    }
+  },[])
   return (
     <>  
-
-{localStorage.getItem('token')?
 <div>
   
    <Navbar/>
@@ -257,6 +260,6 @@ arr=articles.filter((element)=>{
   </div>
      </div>
            
-     </div>:<Signup/>}
+     </div>
    </>
   )}
