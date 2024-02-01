@@ -53,7 +53,7 @@ const toggletheme=()=>{
         <div className="line h-0.5 w-5 my-1 bg-white"></div>
     </div>
        <div className='list'>     
-        <ul className='space-y-9 bg-pink-900 mx-auto z-50 relative w-[182px] sm:w-[300px] sm:pl-28  text-center text-xl 
+        <ul className='space-y-9 bg-pink-900 mx-auto z-50 absolute right-1 top-1 w-[182px] sm:w-[300px] sm:pl-28  text-center text-xl 
          sm:text-sm   my-4 sm:mx-0 sm:my-0 p-4 sm:p-0
         sm:bg-[hsla(231,70%,4%,1)] sm:space-y-0 sm:flex sm:translate-x-[305%] sm:mt-5 sm:space-x-7 sm:ml-4' style={transu} > 
           <li className='text-gray-300 hover:text-white hover:outline-dashed sm:hover:outline-0' ><NavLink to='/login/home'>Home</NavLink></li>
