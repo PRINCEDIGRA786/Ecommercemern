@@ -16,6 +16,9 @@ app.use(express.json())
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/order', require('./routes/order'))
 
+app.use('/',(req,res)=>{
+    res.json({"mesaage":"connected to server"});})
+
 
 app.listen(port, () => {
     console.log(`Bazaarhub app backend listening at port :  http://localhost:${port}`)
